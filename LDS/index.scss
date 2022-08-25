@@ -1,0 +1,109 @@
+// sass input.scss output.css
+
+$marginMenu10: 10px;
+
+@mixin center {
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin sizemenuitem {
+    height: 17.313px;
+    width: 100%;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    margin: 0px;
+
+}
+
+body{
+    margin: 0px;
+    background-color: #4f6a92;
+    font-family: 'Roboto', sans-serif !important;  
+    
+}
+
+.menu-side{
+    display: flex;
+    flex-flow: column wrap;
+    @include center;
+    padding: 0px;
+    width: 255px;
+    height: 100% auto;
+    color: #4f6a92;
+    border-right: 1px solid black;
+    background-color: white;
+    
+    button{
+        border: none;
+        background-color: white;
+    }
+    button:hover{
+        background-color: rgb(212, 224, 236);
+        transition: 150ms;
+    }
+ 
+    
+}
+
+.scroll{
+    overflow-y: scroll;
+    
+}
+
+.banner{
+    display: flex;
+    @include center;
+    padding-right: 0;
+    flex-flow:column wrap;
+    position: relative;
+    right: 10px;
+    h3{
+        margin: 0 0 15px 0;
+        font-size: 15px;
+        font-weight: lighter;
+    }
+
+    input{
+        position: relative;
+        left: 3px;
+        width: 190px;
+        margin: 20px 15px 15px 15px;
+        height: 25.313px;
+        padding-left: 20px;
+        border: 1px solid #D8DEE7;
+        border-radius: 4px;
+    }
+
+    input:focus{
+        outline: none;
+        border: 1px solid rgb(74, 141, 209);
+        -webkit-box-shadow: 0px 0px 3px 1px rgba(101,166,245,1);
+        -moz-box-shadow: 0px 0px 3px 1px rgba(101,166,245,1);
+        box-shadow: 0px 0px 3px 1px rgba(101,166,245,1);
+    }
+}
+
+.logo{
+    margin-top: 8px;
+    display: flex;
+    @include center;
+}
+
+.side-menu-item{
+    display: flex;
+    @include sizemenuitem;
+    @include center;
+    justify-content: start;
+    font-size: 12px;
+    color: #4f6a92;
+    letter-spacing: 0.5px;
+    font-family: 'Roboto', sans-serif !important; 
+    font-weight: 500;
+    
+}
+
+
+.block{
+    display: block;
+}
+

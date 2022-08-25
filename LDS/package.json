@@ -1,0 +1,14 @@
+{
+  "name": "lds",
+  "version": "1.0.0",
+  "description": "Prueba de CSS y HTML",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ricardo Viloria",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.54.5"
+  }
+}
